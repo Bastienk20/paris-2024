@@ -8,6 +8,7 @@
                 <th>Nom</th>
                 <th>Date de naissance</th>
                 <th>Pays</th>
+                <th>Sport</th>
                 <th>Action</th>
             </tr>
             </thead>
@@ -24,6 +25,7 @@
                 <!--td><span th:text="${#dates.format(athlete.datenaiss, 'dd-MM-yyyy')}"> Nom </span></td-->
                 <td><span> {{dateNaiss}} </span></td>
                 <td><span> {{pays.nom}}</span></td>
+                <td><span> {{sport.libelle}}</span></td>
                 <td>
                     <a href="/updateAthlete/{{id}}"><button class="btn btn-info">Modifier</button></a>
                     <a href="/deleteAthlete/{{id}}"><button class="btn btn-danger">Supprimer</button></a>
