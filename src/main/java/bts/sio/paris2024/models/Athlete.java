@@ -30,6 +30,9 @@ public class Athlete {
     @ManyToOne
     private Pays pays;
 
+    @ManyToOne
+    private Sport sport;
+
     @ManyToMany
     private List<Olympiade> olympiades = new ArrayList<>();
 
